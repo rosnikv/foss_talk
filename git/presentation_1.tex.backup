@@ -301,7 +301,6 @@ Govt. Engg College , Sreekrishnapuram \\ % Your institution for the title page
   \includegraphics[scale=0.25]{newrepo.png}
 \end{frame}
 
-\subsection{Our first git repo}
 \begin{frame}
 \frametitle{Our first git repo}
 \textbf{Now create the local repository...}
@@ -318,17 +317,61 @@ Govt. Engg College , Sreekrishnapuram \\ % Your institution for the title page
 \text Run this command to create a README file:  \textit{touch README}
 \end{frame}
 
-\subsection{Our first git repo}
 \begin{frame}
 \frametitle{Our first git repo}
 \begin{itemize}
  \item git add README
  \text Now, run this command to commit it:
  \item git commit -m 'first commit'
- \item git init 
+ \text To get this empty README file to GitHub, you need to push it with a couple of commands.
+ \item git remote add origin https://github.com/yourusername/Hello-World.github
+ \item git push origin master
 \end{itemize}
 \end{frame}
 
+\begin{frame}
+\frametitle{ Congratulations on your first commit!}
+%Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
+\includegraphics[scale=0.8]{ydi.jpg}
+\end{frame}
+
+\begin{frame}
+\frametitle{Some more experiments}
+\begin{itemize}
+ \item Track changes :  echo "This is a simple test repository" > README  (git status)
+ \text Now, run this command :
+ \item git add README and git status
+ \text Commit changes : git commit -m "add README to repository"
+ \item Commit multiple files : touch file1.txt file2.txt
+\item git add *.txt
+\item git status
+ \item git commit -m "add more files to repo" 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Some more experiments}
+\begin{itemize}
+ \item History : git log , git log --summary
+ \text What have I changed $?$
+ \item echo "This repo is getting interesting" \gg README
+ \text Now run this :
+ \item git diff README
+\item work, commit, work, commit, ... git add README and git commit -m "Update README with interesting stuff."
+\item Rename files : git mv file1.txt file_boring.txt and git status
+ \item Removing files :git rm file2.txt and git status
+ \item Now commit : git commit -m "renaming and removing files"
+ \item 	Fork a project: git clone git$@$git.lumc.nl:z.tatum/course-assignments.git
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{ Check codeschool<> to explore and learn more about git.}
+%Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
+\includegraphics[scale=0.2]{codeschool.png}
+\end{frame}
 %\begin{frame}
 %\frametitle{Table}
 %\begin{table}
@@ -404,7 +447,7 @@ Govt. Engg College , Sreekrishnapuram \\ % Your institution for the title page
 %------------------------------------------------
 
 \begin{frame}
-\Huge{\centerline{The End}}
+\Huge{\centerline{Have fun managing your code!}}
 \end{frame}
 
 %----------------------------------------------------------------------------------------

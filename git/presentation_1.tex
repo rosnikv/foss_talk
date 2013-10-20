@@ -336,6 +336,38 @@ Govt. Engg College , Sreekrishnapuram \\ % Your institution for the title page
 \end{frame}
 
 \begin{frame}
+  \frametitle{Some more experiments}
+      \begin{itemize}
+	\item Track changes :  echo "This is a simple test repository" $>$ README  (git status)\newline
+	\text Now, run this command :
+	\item git add README and git status\newline
+	\text Commit changes : git commit -m "add README to repository"
+	\item Commit multiple files : touch file1.txt file2.txt
+	\item git add $*$.txt
+	\item git status
+	\item git commit -m "add more files to repo" 
+      \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Some more experiments}
+	\begin{itemize}
+		\item History : git log , git log --summary\newline
+		\text What have I changed $?$
+		\item echo "This repo is getting interesting" $>$ $>$ README \newline
+		\text Now run this :
+		\item git diff README
+		\item work, commit, work, commit, ... : git add README and git commit -m "Update README with interesting stuff."
+		\item Rename files : git mv file1.txt file\_boring.txt and git status
+		\item Removing files : git rm file2.txt and git status
+		\item Now commit : git commit -m "renaming and removing files"
+		 \item Fork a project: git clone git\textcircled{a}git.lumc.nl:z.tatum$/$course-assignments.git
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
 \frametitle{ Check codeschool<> to explore and learn more about git.}
 %Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
 \includegraphics[scale=0.2]{codeschool.png}
